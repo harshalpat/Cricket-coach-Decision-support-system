@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+    <title>CRICKET</title></br>
+
+        <h1 style="color:dodgerblue">ENTER CRITERIA FOR TEAM SELECTION</h1></br></br></br></br></br></br>
+
+        <style type="text/css">
+
+            .box{
+                background-image: url({{url_for('static', filename='demo.jpeg')}});
+                background-size: cover;
+                text-align: center;
+                }
+        </style>
+
+	</head>
+
+
+<body class="box">
+
+
+   <form name="passdata" action="." method="POST">
+
+        </br></br>
+     <table align="center">
+       <tr>
+           <td style="color:pink" align="right">
+               <label style="color:pink"> CHOOSE LOCATION OF THE GAME </label>
+              <td style="color:pink" align="left">
+               <input type="radio" name="location" value="MUMBAI">  <label style="color:pink">Mumbai</label></input>
+               <input type="radio" name="location" value="CHENNAI"><label style="color:pink"> Chennai </label></input>
+               <input type="radio" name="location" value="DELHI"> <label style="color:pink">Delhi</label></input>
+          </td>
+
+      </tr>
+      <tr>
+          <td style="color:pink" align="right">
+               <label style="color:pink"> TYPE OF MATCH </label>
+              <td style="color:pink" align="left">
+               <input type= "radio" name="match" value="t_20"><label style="color:pink"> T-20</label></input>
+               <input type= "radio" name="match" value="odi"><label style="color:pink"> ODI </label></input>
+               <input type= "radio" name="match" value="test"><label style="color:pink"> Test </label> </input>
+          </td>
+      </tr>
+
+      <tr>
+          <td style="color:pink" align="right">
+               <label style="color:pink"> OPPONENT TEAM</label>
+              <td style="color:pink" align="left">
+               <input type= "radio" name="opp" value="sweden"><label style="color:pink"> Sweden </label></input>
+               <input type= "radio" name="opp" value="australia"><label style="color:pink"> Australia</label></input>
+               <input type= "radio" name="opp" value="newzealand"> <label style="color:pink">New Zealand</label></input>
+          </td>
+      </tr>
+
+
+      <tr>
+          <td style="color:pink" align="right">
+            <label style="color:pink"> NO. OF MATCHES TO BE PLAYED </label>
+           <td style="color:pink" align="left">
+            <input type= "text" name="nom">
+          </td>
+      </tr>
+
+
+     </table>
+
+        </br></br>
+        <input type="submit" value="submit" align="center">
+
+
+
+
+    </form>
+
+  </body>
+</html>
